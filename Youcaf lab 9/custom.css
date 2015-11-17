@@ -1,0 +1,60 @@
+#calendar {
+    display:inline-block;
+    background:#efefef;
+    margin: auto;
+    border:solid 1px #CCC;
+    margin-bottom:10px;
+    display:table;
+    max-width: 850px;
+}
+h2.monthName.ng-binding {
+    text-align: center;
+}
+
+#calendar>div.header>span {
+    width:100%;
+    font-weight:bold;
+    text-transform:uppercase;
+    padding-left:40px;
+    margin-left:40px;
+    text-align:center;
+    padding-right:40px;
+    color:inherit;
+    display:table-caption;
+}
+#calendar>div.week {
+    float:left;
+    width:100%;
+    border-top:solid 1px #ccc;
+    display:table-row;
+}        
+#calendar>div.week:first-child {
+    border-top:none;
+}
+
+#calendar>span.day {
+    float:left;
+    width:100%;
+    border-left:solid 1px #CCC;
+    font-size:0.75em;
+    text-align:center;
+    background:white;
+    cursor:pointer;
+    color:black;
+   
+}            
+#calendar>span.day:first-child {
+    border-left:none;
+}
+
+.today {
+    background:#E3F2FF;
+}
+
+.day {
+    color:#2875C7;
+    font-weight:bold;
+    width: 100px;
+    padding:10px;
+     display: table-cell;
+}

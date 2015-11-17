@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather App </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="custom.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        <script src="app2.js"></script>
+    </head>
+    <body ng-app="WeatherCalendar">
+        <div ng-controller="calendarController" id="calendar">
+            <div class="header">
+                <h2 ng-bind="currMonth" class="monthName"></h2>
+            </div>
+            <div class="week names">
+                <span class="day">Mon</span>
+                <span class="day">Tue</span>
+                <span class="day">Wed</span>
+                <span class="day">Thu</span>
+                <span class="day">Fri</span>
+                <span class="day">Sat</span>
+                <span class="day">Sun</span>
+            </div>
+            <div class="week" ng-repeat="week in weeks">
+              
+                <div ng-repeat="day in week" style="display: inline-block">
+                    <span class="day" id="day.id" ng-class="day.class" ng-bind="day.data"></span>
+                </div>
+                
+                    
+            </div>
+            
+        </div>
+    </body>
+</html>
